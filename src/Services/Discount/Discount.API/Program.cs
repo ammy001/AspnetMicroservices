@@ -3,8 +3,6 @@ using Discount.API.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//builder.Build().MigrateDatabase<Program>();
-
 // Add services to the container.
 builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
 
